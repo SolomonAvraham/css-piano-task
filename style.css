@@ -1,0 +1,144 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  background-image:url(./student-playing-piano.jpeg);
+  background-size: 50% 90%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: scroll;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.piano {
+  background-color: #808080;
+  height: 95vh;
+  width: 40vw;
+  margin-top: 2%;
+  position: relative;
+}
+
+.piano-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+
+.white > div {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px 10px 10px 0px;
+  height: 9.5%;
+  width: 75%;
+  margin-top: 8%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.1, 0.3, 0.5, 0.8);
+}
+
+.white > div:hover {
+  box-shadow: 1px 4px, 0px 3px 6px 2px gray inset;
+  background-image: url(./do_re_mi.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 8%;
+}
+
+.white-key-1 {
+  position: absolute;
+  top: 0%;
+}
+
+.white-key-2 {
+  position: absolute;
+  top: 10%;
+}
+.white-key-3 {
+  position: absolute;
+  top: 20%;
+}
+.white-key-4 {
+  position: absolute;
+  top: 30%;
+}
+.white-key-5 {
+  position: absolute;
+  top: 40%;
+}
+.white-key-6 {
+  position: absolute;
+  top: 50%;
+}
+.white-key-7 {
+  position: absolute;
+  top: 60%;
+}
+.white-key-8 {
+  position: absolute;
+  top: 70%;
+}
+.white-key-9 {
+  position: absolute;
+  top: 80%;
+}
+.white-key-10 {
+  position: absolute;
+  top: 90%;
+}
+.white-key-11 {
+  position: absolute;
+  top: 100%;
+}
+
+.black > div {
+  position: absolute;
+  z-index: 10;
+  background-color: black;
+  border-radius: 0px 10px 10px 0px;
+  width: 40%;
+  height: 7%;
+  margin-top: 7%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.1, 0.3, 0.5, 0.8);
+}
+
+.black > div:hover {
+  box-shadow: 1px 4px, 0px 3px 9px 1px rgb(148, 148, 148) inset;
+  background-image: url(./do_re_mi-2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20%;
+}
+
+.black-key-1 {
+  position: absolute;
+  top: 8%;
+}
+.black-key-2 {
+  position: absolute;
+  top: 18%;
+}
+.black-key-3 {
+  position: absolute;
+  top: 47%;
+}
+.black-key-4 {
+  position: absolute;
+  top: 57%;
+}
+.black-key-5 {
+  position: absolute;
+  top: 88%;
+}
+.black-key-6 {
+  position: absolute;
+  top: 98%;
+}
